@@ -1,0 +1,60 @@
+body{
+    background-image: linear-gradient(to right, rgb(242, 100, 100), rgb(248, 206, 128), rgb(71, 159, 71), rgb(113, 113, 237), rgb(243, 172, 243));
+    contain: fit;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: bold;
+    font-size: 24px;
+    font-style: normal;
+    text-decoration:underline;
+}
+a img{
+    height: 150px;
+    width: 30%;
+}
+/* .background-image{
+    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v960-ning-30.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=63dd5f402645ef52fb7dfb592aec765a);
+} */
+div #container {
+    width: fit-content 100%;
+}
+.my-info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: normal;
+}
+.hobbies{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14px;
+    font-style: oblique;
+    font-weight: bold;
+    /* text-decoration: underline; */
+}
+a{
+    font-size: larger;
+    text-align: center;
+}
+#container{
+    font-size: 30px;
+    text-align: center;
+    border: 2px dashed rgb(174, 189, 189);
+}
+:hover.links{
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+div img{
+    border: 10px solid rgb(163, 182, 185);
+    width: 20%;
+    height: auto;    
+}
+
+
