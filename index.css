@@ -1,25 +1,30 @@
 body{
-    background-image: linear-gradient(to right, rgb(242, 100, 100), rgb(248, 206, 128), rgb(71, 159, 71), rgb(113, 113, 237), rgb(243, 172, 243));
+    background-image: linear-gradient(to right, rgb(242, 110, 110), rgb(240, 194, 107), rgb(100, 230, 100), rgb(97, 97, 240), rgb(236, 109, 236));
     contain: fit;
-    text-align: center;
+    /* text-align: center; */
+    margin: 0;
 }
+
+#container{
+    font-size: 30px;
+    text-align: center;
+    border: 2px dashed rgb(174, 189, 189);
+    padding: 0;
+    width: fit-content 100%;
+}
+
 
 h1{
     font-family: 'Source Code Pro', monospace;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 64px;
     font-style: normal;
     text-decoration:underline;
+    margin: 0 5px;
 }
 a img{
     height: 150px;
     width: 30%;
-}
-/* .background-image{
-    background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v960-ning-30.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=63dd5f402645ef52fb7dfb592aec765a);
-} */
-div #container {
-    width: fit-content 100%;
 }
 .my-info{
     font-family: Arial, Helvetica, sans-serif;
@@ -28,20 +33,39 @@ div #container {
     font-weight: normal;
 }
 .hobbies{
-    font-family:'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    font-style: oblique;
-    font-weight: bold;
-    /* text-decoration: underline; */
+    font-style: italic;
+    font-weight: normal;
 }
+ul{
+    list-style-position: inside;
+}
+
+ol{
+    list-style-position: inside;
+}
+
 a{
     font-size: larger;
     text-align: center;
 }
-#container{
-    font-size: 30px;
-    text-align: center;
-    border: 2px dashed rgb(174, 189, 189);
+.links{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0 0 ;
+}
+.jobs{
+    padding: 50px 0 0 100px;
+}
+.education{
+    padding: 50px 100px 0 0;
+}
+.home{
+    padding: 50px 0 0 100px;
+}
+.job{
+    padding: 50px 100px 0 0;
 }
 :hover.links{
     font-size: larger;
@@ -56,5 +80,123 @@ div img{
     width: 20%;
     height: auto;    
 }
+h2{
+    margin: 10px 5px;
+}
+p{
+    margin: 5px;
+}
+/* mobile Responsiveness and flexbox/css grid */
+@media(max-width: 320px){
+    h1{
+        font-size: 20px;
+    }
+    .links{
+        display: flex;
+        justify-content:space-around;
+    }
+    .jobs{
+        margin-left: 40px;
+    }
+    .education{
+        margin-right: 20px;
+    }
+    a img{
+        height: 150px;
+        width: 50%;
+    }
+    .my-info{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    .hobbies{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+}
+@media(max-width: 375px){
+    #container{
+        font-size: 25px;
+        text-align: center;
+        border: 3px dotted rgb(174, 189, 189);
+        padding: 0;
+        width: fit-content 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .links{
+        display: flex;
+        justify-content:space-around;
+    }
+    .jobs{
+        margin-left: 10px;
+    }
+    .education{
+        margin-right: 20px;
+    }
+    a img{
+        height: 150px;
+        width: 50%;
+    }
+    .my-info{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    .hobbies{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+}
+@media(max-width: 425px){
+    #container{
+        font-size: 15px;
+        text-align: center;
+        border: 3px solid rgb(96, 198, 198);
+        padding: 0;
+        width: fit-content 100%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .links{
+        display: flex;
+        justify-content:space-around;
+    }
+    .jobs{
+        margin-left: 40px;
+    }
+    .education{
+        margin-right: 20px;
+    }
+    a img{
+        height: 150px;
+        width: 50%;
+    }
+    .my-info{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    .hobbies{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+}
+
 
 
